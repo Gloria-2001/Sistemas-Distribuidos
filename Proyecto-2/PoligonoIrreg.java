@@ -1,3 +1,8 @@
+/**
+ * PROYECTO #2
+ * NOMBRE: Gloria Oliva Olivares Ménez
+ * GRUPO: 4CM12
+ */
 public class PoligonoIrreg{
     Coordenada [] vertices;
     int tam;

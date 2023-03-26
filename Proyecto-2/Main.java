@@ -1,3 +1,8 @@
+/**
+ * PROYECTO #2
+ * NOMBRE: Gloria Oliva Olivares Ménez
+ * GRUPO: 4CM12
+ */
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,3 +1,8 @@
+/**
+ * PROYECTO #2
+ * NOMBRE: Gloria Oliva Olivares Ménez
+ * GRUPO: 4CM12
+ */
 import javax.swing.*;
 import java. awt.*;
 import java.util.*;

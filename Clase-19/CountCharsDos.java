@@ -3,12 +3,10 @@ import java.io.FileNotFoundException; // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
 import java.util.ArrayList;
 import java.util.Collections;
-
 public class CountCharsDos {
     public ArrayList<CharCounter> characters; 
     private Scanner reader;
     
-
     public CountCharsDos(String path) {
         try {
             this.characters = new ArrayList<>();
@@ -19,7 +17,6 @@ public class CountCharsDos {
             System.exit(1);
         }
     }
-
     public void readFile() {
         try {
             while (this.reader.hasNextLine()) {
@@ -34,7 +31,6 @@ public class CountCharsDos {
             System.exit(1);
         }
     }
-
     public void count(char c) {
         if (c == '\n' || c == ' ' || c == '\t')
             return;
@@ -45,7 +41,6 @@ public class CountCharsDos {
             characters.add(new CharCounter(c)); 
         }
     }
-
     public static CharCounter findCharacter(ArrayList<CharCounter> lista, char c){
         for(CharCounter caracter : lista){
             if(caracter.getCaracter() == c){
@@ -54,7 +49,6 @@ public class CountCharsDos {
         }
         return null; 
     }
-
     public String toString() {
         String out = "";
         Collections.sort(characters,new ComparatorCharacter());
@@ -63,13 +57,11 @@ public class CountCharsDos {
         }
         return out;
     }
-
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("java CountCharsDos file.txt");
             return;
         }
-
         CountCharsDos cc = new CountCharsDos(args[0]);
         cc.readFile();
         System.out.println(cc);
